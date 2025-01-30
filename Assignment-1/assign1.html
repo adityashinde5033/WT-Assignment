@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Website</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background-color: #fafff3;}
+        .header { display: flex; justify-content: center; background: #004cbf; color: white; padding: 1rem; font-size: 1.5rem; }
+        .icons { width: 2.5rem; margin-left: 1rem;}
+        .top-bar { background: #6094fc; color: white; text-align: center; padding: 0.8rem; font-size: 1.2rem; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 10px; }
+        .books { display: flex; flex-wrap: wrap; justify-content: center; gap: 50px; }
+        .book-card { background: rgba(233, 239, 255, 0.8); padding: 15px; margin-top: 30px; margin-bottom: 30px; border-radius: 25px 0px 25px 0px; text-align: center; width: 200px; box-shadow: 5px 10px 35px 2px rgba(46, 78, 152, 0.8) }
+        .book-card img { width: 100%; border-radius: 15px 0px 15px 0px; }
+        .rent-btn { display: block; margin-top: 10px; padding: 8px; background: #333; color: white; text-decoration: none; border-radius: 15px; }
+        .full-width-card { background: #becdf4; padding: 20px; margin-top: 20px; text-align: center; font-size: 1.2rem; border-radius: 35px 0px 35px 0px; }
+        @media (max-width: 600px) {
+            .books { flex-direction: column; align-items: center; }
+            .book-card { width: 90%; }
+        }
+        .stats { display: flex; justify-content: space-around; margin-top: 20px; }
+        .stat-card { background: #eee; padding: 15px; border-radius: 5px; text-align: center; width: 200px; font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h3>Library Website</h3>
+        <img class="icons" src="https://georgialibraries.org/wp-content/uploads/2024/03/orl-logo-full-color-rgb.png" alt="Book Image">
+    </div>
+    <div class="top-bar">Hello There! It's a Library Website</div>
+    <div class="container">
+        <div class="books">
+            <div class="book-card">
+                <img src="https://bpbonline.com/cdn/shop/products/43_Front_800x.jpg?v=1735891222" alt="Book Image">
+                <a href="#" class="rent-btn">Rent</a>
+            </div>
+            <div class="book-card">
+                <img src="https://assets.alexandria.raywenderlich.com/books/961b6dd3ede3cb8ecbaacbd68de040cd78eb2ed5889130cceb4c49268ea4d506/images/5e8e25e2c8ef67369b94fa5b42eb7d10/original.png" alt="Book Image">
+                <a href="#" class="rent-btn">Rent</a>
+            </div>
+            <div class="book-card">
+                <img src="https://in.bpbonline.com/cdn/shop/products/75_Epub_1024x.jpg?v=1679053288" alt="Book Image">
+                <a href="#" class="rent-btn">Rent</a>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">Total Books: <br> 5000</div>
+            <div class="stat-card">Rented Books: <br> 1200</div>
+            <div class="stat-card">Available Books:<br> 3800</div>
+            <div class="stat-card">Research Papers:<br> 800</div>
+        </div>
+
+        <div class="full-width-card">Library Activities: Reading Sessions, Workshops & More</div>
+        <div class="full-width-card">Upcoming Events: Book Fairs, Author Meetups & More</div>
+    </div>
+</body>
+</html>
